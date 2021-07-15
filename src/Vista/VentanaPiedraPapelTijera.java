@@ -1,4 +1,4 @@
-package piedrapapeltijera;
+package Vista;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
@@ -29,6 +29,11 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,7 +79,7 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         jButton6.setOpaque(false);
         jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn_papel1.png"))); // NOI18N
         jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn_papel1_pressed.png"))); // NOI18N
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 120, 120));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 120, 120));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn_tpiedra1.png"))); // NOI18N
         jButton3.setBorderPainted(false);
@@ -87,7 +92,7 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 120, 120));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 120, 120));
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn_tijera1.png"))); // NOI18N
         jButton8.setBorderPainted(false);
@@ -104,14 +109,19 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(33, 43, 65));
         jButton1.setFont(new java.awt.Font("Chiller", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(94, 241, 128));
+        jButton1.setForeground(new java.awt.Color(255, 124, 172));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn_reiniciar.png"))); // NOI18N
         jButton1.setText("Reiniciar");
+        jButton1.setBorderPainted(false);
+        jButton1.setFocusPainted(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 100, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 0, 110, 30));
 
         jLabel2.setFont(new java.awt.Font("Chiller", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -119,7 +129,24 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         jLabel2.setText("Ha ganado Jugador");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -2, 670, 430));
+        jPanel2.setBackground(new java.awt.Color(94, 241, 128));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, 20, 160));
+
+        jPanel10.setBackground(new java.awt.Color(94, 241, 128));
+        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 680, 10));
+
+        jPanel3.setBackground(new java.awt.Color(94, 241, 128));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 20, 160));
+
+        jPanel4.setBackground(new java.awt.Color(94, 241, 128));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 20, 160));
+
+        jLabel5.setBackground(new java.awt.Color(33, 43, 65));
+        jLabel5.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
+        jLabel5.setText("Creador: Alfredo Calle Aguilar");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 180, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -2, 670, 440));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -186,6 +213,11 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }
