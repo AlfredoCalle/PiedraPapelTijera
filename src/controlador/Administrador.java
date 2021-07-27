@@ -1,7 +1,5 @@
 package controlador;
 
-import java.util.Random;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import modelo.Logica;
 import vista.VentanaPiedraPapelTijera;
@@ -25,6 +23,10 @@ public class Administrador {
 
     public void eleccionMaquina(JButton botonMaquina) {
         logica.eleccionMaquina(botonMaquina);
+    }
+
+    public void eleccionUsuario(JButton botonJugador, String nombre) {
+        logica.eleccionUsuario(botonJugador, nombre);
     }
 
 }
