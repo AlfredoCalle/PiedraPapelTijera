@@ -29,4 +29,8 @@ public class Administrador {
         logica.eleccionUsuario(botonJugador, nombre);
     }
 
+    public void victoria(JButton botonMaquina, JButton botonJugador) {
+        logica.victoria(botonMaquina,botonJugador);
+    }
+
 }

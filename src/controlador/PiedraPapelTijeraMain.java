@@ -3,7 +3,10 @@ package controlador;
 import modelo.Logica;
 import vista.VentanaPiedraPapelTijera;
 
-// Aplicacar arquitectura MVC
+
+/**
+ * @author Alfredo Calle Aguilar
+*/
 public class PiedraPapelTijeraMain {
     
     public static void main(String[] args) {

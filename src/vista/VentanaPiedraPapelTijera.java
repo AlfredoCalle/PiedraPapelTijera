@@ -7,16 +7,8 @@ import controlador.Administrador;
  * @author Alfredo Calle Aguilar
  */
 public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
-    // "btn_papel2.png", "btn_piedra2.png", "btn_tijera2.png"
+    
     private Administrador admin;
-    private String[][] vistorias = {
-        {"btn_papel2.png", "btn_tijera2.png"},
-        {"btn_tijera2.png", "btn_papel2.png"},
-        {"btn_tijera2.png", "btn_piedra2.png"},
-        {"btn_piedra2.png", "btn_tijera2.png"},
-        {"btn_papel2.png", "btn_piedra2.png"},
-        {"btn_piedra2.png", "btn_papel2.png"}
-    };
 
     public VentanaPiedraPapelTijera() {
         initComponents();
@@ -169,15 +161,17 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
     private void botonPiedraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPiedraActionPerformed
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_piedra2.png");
+        admin.victoria(botonMaquina, botonJugador);
     }//GEN-LAST:event_botonPiedraActionPerformed
 
     private void botonMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMaquinaActionPerformed
-        // TODO add your handling code here:
+        //
     }//GEN-LAST:event_botonMaquinaActionPerformed
 
     private void botonTijeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonTijeraActionPerformed
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_tijera2.png");
+        admin.victoria(botonMaquina, botonJugador);
     }//GEN-LAST:event_botonTijeraActionPerformed
 
     private void botonReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReiniciarActionPerformed
@@ -187,20 +181,13 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
     private void botonPapelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPapelActionPerformed
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_papel2.png");
+        admin.victoria(botonMaquina, botonJugador);
     }//GEN-LAST:event_botonPapelActionPerformed
 
     public void setAdministrador(Administrador admin) {
         this.admin = admin;
     }
-    /*
-    public void eleccionMaquina() {
-        String[] nombreImagenes = {"btn_papel2.png", "btn_piedra2.png", "btn_tijera2.png"};
-        Random rd = new Random();
-        int i = rd.nextInt(nombreImagenes.length);
-        botonMaquina.setIcon(new ImageIcon(getClass().getResource("/images/" + nombreImagenes[i])));
-        System.out.println("se activo eleccionMaquina");
-    }
-    */
+
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
