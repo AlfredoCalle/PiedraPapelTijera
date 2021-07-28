@@ -1,6 +1,7 @@
 package controlador;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import modelo.Logica;
 import vista.VentanaPiedraPapelTijera;
 
@@ -31,6 +32,18 @@ public class Administrador {
 
     public void victoria(JButton botonMaquina, JButton botonJugador) {
         logica.victoria(botonMaquina,botonJugador);
+    }
+
+    public void setEstado(boolean b) {
+        logica.setEstado(b);
+    }
+
+    public void mostrarGanador(JLabel txtGanador) {
+        logica.mostrarGanador(txtGanador);
+    }
+
+    public void reiniciar(JButton botonMaquina, JButton botonJugador) {
+        logica.reiniciar(botonMaquina, botonJugador);
     }
 
 }

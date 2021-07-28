@@ -132,8 +132,8 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         txtGanador.setFont(new java.awt.Font("Chiller", 1, 36)); // NOI18N
         txtGanador.setForeground(new java.awt.Color(255, 255, 255));
         txtGanador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtGanador.setText("Ha ganado Jugador");
-        jPanel1.add(txtGanador, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, 30));
+        txtGanador.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(txtGanador, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 320, 30));
 
         jPanel2.setBackground(new java.awt.Color(94, 241, 128));
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 20, 140));
@@ -162,6 +162,8 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_piedra2.png");
         admin.victoria(botonMaquina, botonJugador);
+        admin.mostrarGanador(txtGanador);
+        admin.setEstado(false);
     }//GEN-LAST:event_botonPiedraActionPerformed
 
     private void botonMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMaquinaActionPerformed
@@ -172,16 +174,21 @@ public class VentanaPiedraPapelTijera extends javax.swing.JFrame {
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_tijera2.png");
         admin.victoria(botonMaquina, botonJugador);
+        admin.mostrarGanador(txtGanador);
+        admin.setEstado(false);
     }//GEN-LAST:event_botonTijeraActionPerformed
 
     private void botonReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReiniciarActionPerformed
-        // TODO add your handling code here:
+        admin.reiniciar(botonMaquina, botonJugador);
+        admin.mostrarGanador(txtGanador);
     }//GEN-LAST:event_botonReiniciarActionPerformed
 
     private void botonPapelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPapelActionPerformed
         admin.eleccionMaquina(botonMaquina);
         admin.eleccionUsuario(botonJugador, "btn_papel2.png");
         admin.victoria(botonMaquina, botonJugador);
+        admin.mostrarGanador(txtGanador);
+        admin.setEstado(false);
     }//GEN-LAST:event_botonPapelActionPerformed
 
     public void setAdministrador(Administrador admin) {
